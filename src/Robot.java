@@ -32,4 +32,22 @@ public void reculer(int vitesse) {
 	
 	this.position.deplacer(dir.get(direction), vitesse);
 }
+//Tourner à droite
+public void tournerDroite() {
+	switch(this.direction) {
+	case "nord":this.direction="est";break;
+	case "est":this.direction="sud";break;
+	case "sud":this.direction="ouest";break;
+	case "ouest":this.direction="nord";break;
+	}
+}
+//Tourner à gauche
+public void tournerGauche() {
+	switch(this.direction) {
+	case "nord":this.direction="ouest";break;
+	case "ouest":this.direction="sud";break;
+	case "sud":this.direction="est";break;
+	case "est":this.direction="nord";break;
+	}
+}
 }
