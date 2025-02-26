@@ -24,6 +24,7 @@ public String toString() {
 public void avancer(int vitesse) {
 	this.position.deplacer(direction, vitesse);
 }
+//reculer
 public void reculer(int vitesse) {
 	Map<String, String> dir=new HashMap<String, String>();
 	dir.put("nord", "sud");dir.put("sud", "nord");
